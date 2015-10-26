@@ -120,7 +120,7 @@ bootstrapQ.alert = function (options, func) {
     var opt = $.extend({}, bootstrapQ.modaloptions);
 
     opt.title = '\u63d0\u793a';
-    if (typeof options == 'string') {
+    if (typeof options == 'string' || typeof options == 'number') {
         opt.msg = options;
     } else {
         $.extend(opt, options);
